@@ -1,6 +1,6 @@
 version: '2'
 services:
-  bind:
+  proxy:
     build: .
     ports:
     - "80:80"

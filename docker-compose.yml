@@ -3,5 +3,6 @@ services:
   proxy:
     build: .
     ports:
-    - "80:80"
+      - "80:80"
+    dns: ${DOCKER_PROXY_DNS}
     restart: always

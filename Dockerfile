@@ -11,4 +11,4 @@ RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/home.
 
 RUN htpasswd -cb /etc/nginx/.htpasswd kmager test
 
-EXPOSE 6565 6566
+EXPOSE 6565

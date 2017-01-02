@@ -3,6 +3,6 @@ services:
   proxy:
     build: .
     ports:
-      - "80:80"
       - "6565:6565"
+      - "6566:6566"
     restart: always

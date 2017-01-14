@@ -4,4 +4,5 @@ services:
     build: .
     ports:
       - "6565:6565"
+      - "80:80"
     restart: always

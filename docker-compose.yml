@@ -5,4 +5,6 @@ services:
     ports:
       - "6565:6565"
       - "80:80"
+    volumes:
+      - ${PLEX_CONFIG_DIR}:/config/
     restart: always

@@ -7,6 +7,4 @@ RUN rm /etc/nginx/conf.d/*.conf
 
 ADD conf /etc/nginx/conf.d
 
-RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/home.cert.key -out /etc/nginx/home.cert.crt -subj "/C=US/ST=Maryland/L=Baltimore/O=HLM/OU=IT Department/CN=home.heatherandkevin.net"
-
 EXPOSE 80 6565

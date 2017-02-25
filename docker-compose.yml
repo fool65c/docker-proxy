@@ -3,8 +3,5 @@ services:
   proxy:
     build: .
     ports:
-      - "6565:6565"
       - "80:80"
-    volumes:
-      - ${PROXY_CONFIG_DIR}:/config/
     restart: always
